@@ -29,5 +29,7 @@ function login() {
             alert(res.msg);
             console.log(res);
         }
-    });
+    }).catch((err) => {
+        console.error("로그인 중 에러 발생");
+    })
 }
