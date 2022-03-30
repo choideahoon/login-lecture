@@ -1,6 +1,5 @@
 "use strict";
 
-const { post } = require("../../../routes/home");
 
 const id = document.querySelector("#id"),
     passwd = document.querySelector("#passwd"),
@@ -20,5 +19,7 @@ function login() {
             "Content-Type": "application/json",
         },
        body: JSON.stringify(req),       
-    });
+    })
+    .then(res.json())
+    .then(console.log(res));
 }
