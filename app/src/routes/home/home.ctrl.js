@@ -23,7 +23,7 @@ const process = {
          const idx = users.id.indexOf(id);
          if (users.passwd[idx] === passwd){
             return res.json({
-                seccess: true,
+                success: true,
                  });
                 }
             }
